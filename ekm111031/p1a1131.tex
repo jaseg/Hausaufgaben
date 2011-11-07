@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper,notitlepage]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[a4paper,textwidth=17cm, top=2cm, bottom=3.5cm]{geometry}
+\usepackage{eurosym}
+%\usepackage{url}
+\usepackage[T1]{fontenc}
+\usepackage{ucs}
+\usepackage{ngerman} 
+\usepackage{setspace}
+%\usepackage{fourier}
+\usepackage{amssymb,amsmath}
+\usepackage{wasysym}
+%\usepackage{marvosym}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage[pdftex]{graphicx,color}
+\usepackage{todo}
+\usepackage{amsthm}
+\definecolor{p-green}{rgb}{0.12,0.57,0.11}
+\newcommand{\bitem}{\item[--]}
+\newcommand{\litem}[2]{\item[#1 --] #2}
+\newcommand{\blitem}[3]{\item[#1 --] \texttt{#2} -- #3}
+\newcommand{\gfo}{\grqq\ }
+\newcommand{\gfu}{\glqq}
+\newcommand{\zquote}[2]{\glqq #1\grqq\ (Z.\ #2)}
+\newcommand{\pquote}[1]{\glqq #1\grqq}
+\newcommand{\nquote}[2]{#1: \glqq #2\grqq}
+\newcommand{\nwquote}[3]{#1 -- \emph{#2}: \glqq #3\grqq}
+\newcommand{\nwyquote}[4]{#1 -- \emph{#2} (#3): \glqq #4\grqq}
+\newcommand{\diff}{\mathrm{d}}
+\renewcommand{\abstractname}{}
+\definecolor{orange}{rgb}{1,0.6,0}
+\definecolor{d-green}{rgb}{0,0.8,0}
+\definecolor{pink}{rgb}{1,0,0.6}
+\newcommand{\annot}[1]{\textcolor{red}{#1}}
+\newcommand{\ecolor}[1]{\textcolor{pink}{#1}}
+\newcommand{\aufgabe}[1]{\section*{\setcounter{section}{#1}Aufgabe #1}}
+\newcommand{\re}{\text{Re}}
+\newcommand{\im}{\text{Im}}
+\onehalfspacing
+\numberwithin{equation}{section}
+\setlength{\parskip}{8pt plus4pt minus4pt}
+\title{}
+\begin{document}
+\aufgabe{1}
+\begin{align}
+h'(u)&=\frac{u}{\sqrt{u^2+x^2}}\\
+F'(y)&=\frac{-\ln a}{a}\\
+F'(a)&=-ya^{-y-1}
+\end{align}
+\aufgabe{2}
+\begin{align}
+I_1&=\frac{1}{2}\int_0^{2\pi}sin(x)\diff x\\
+&=0\\
+I_2&=\left.\sin x-x\cos x\right|_0^\pi
+\end{align}
+\aufgabe{3}
+\begin{align}
+&10^{-3}m\\
+&7.6\cdot10^{-7}m^2\\
+&10^{-3}m^3\\
+&0.7\cdot 10^{-9}kg\\
+&86400s\\
+&31557600s\\
+&10\frac{m}{s}\\
+&7.7\frac{m}{s^2}
+\end{align}
+\aufgabe{4}
+\begin{align}
+\overline V&=\overline \ell^3\\
+&=(200mm)^3\\
+&=(2.00\cdot10^{-1})^3m^3\\
+&=8.00\cdot10^{-3}m^3\qed\\
+\overline V+\Delta V&=\left(\overline\ell\pm\Delta\ell\right)^3\\
+&=(200mm\pm2mm)^3\\
+&\Rightarrow\left\{\begin{array}{l}(2.02\cdot10^{-1})^3m^3\\(1.98\cdot10^{-1})^3m^3\\\end{array}\right.\\
+&\Rightarrow\left\{\begin{array}{l}8.24\cdot10^{-3}m^3\\7.76\cdot10^{-3}m^3\\\end{array}\right.\\
+\Rightarrow\Delta\ell&=\max(\left|V_1-\overline V\right|,\left|V_2-\overline V\right|)\\
+&=0.24\cdot10^{-3}m^3\qed
+\end{align}
+\aufgabe{5}
+\begin{align}
+t&=\frac{s}{v}\\
+&=\frac{\overline s\pm\Delta s}{c}; c=299792458\frac{m}{s}=2.99792458\cdot10^9\frac{m}{s}=2.99792458\frac{m}{ns}\\
+&=\frac{\overline s}{c}\pm\frac{\Delta s}{c}\\
+&=\frac{7.312780\cdot10^5nsm}{2.99792458m}\pm\frac{0.2nsm}{2.99792458m}\\
+&=\frac{7.312780}{2.99792458}\cdot10^5ns\pm\frac{0.2}{2.99792458}ns\\
+&=2.439281\cdot10^5ns\pm6.7\cdot10^{-2}ns\qed
+\end{align}
+Zu b): Ja, die Abweichung ist signifikant, da sie außerhalb der in der obigen Rechnung bestimmten Fehlergrenzen liegt.
+\begin{align}
+v&=\frac{s}{t}\\
+&=\frac{7.312780\cdot10^5\pm0.2}{243988.8\pm10.2}\cdot\frac{m}{ns}\\
+\overline v&=\frac{7.312780\cdot10^5}{2.439888\cdot10^5}\cdot\frac{m}{ns}\\
+&=2.9971786 \frac{m}{ns}
+\end{align}
+\end{document}
