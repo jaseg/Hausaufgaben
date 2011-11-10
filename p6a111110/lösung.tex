@@ -57,7 +57,7 @@ n\in\mathbb{N}; n>2\Leftrightarrow n^{n+1}>(n+1)^n
 \end{equation}
 \aufgabe{2}
 \subsection*{a)}
-Wahr.
+Wahr. $(A\times B)\cap(C\times D) = (x_a\in A,x_b\in B)\cap(Y_a\in C,Y_b\in D)$. Der $\cap$-Operator erfordert nun, dass ein Paar, das in der Ergebnismenge ist, sowohl in der rechten, als auch in der linken Menge auftaucht. Diese ist somit: $(x_a\in A,x_b\in B)\cap(x_a\in C,x_b\in D)=(x_a\in A\text{ und } x_a\in C,x_b\in B\text{ und } x_b\in D)$
 \subsection*{b)}
 Unwahr. Ein $(x\in A,y\in D)$ wäre nur in der linken Menge enthalten.
 \aufgabe{4}
@@ -82,7 +82,7 @@ Ja. z.B.:
 \begin{align}
 A&=\left[0,1\right]\\
 B&=\left]0,\right[\\
-A\rightarrow B:=b(a)&=\left\{\begin{array}{cl}\frac{1}{\frac{1}{a}+1}&\text{ falls }\frac{1}{a}\in\mathbb{N}\\a&\text{ sonst.}\end{array}\right.\\
-B\rightarrow A:=a(b)&=\left\{\begin{array}{cl}\frac{1}{\frac{1}{b}-1}&\text{ falls }\frac{1}{b}\in\mathbb{N}\\b&\text{ sonst.}\end{array}\right.
+A\rightarrow B:=b(a)&=\left\{\begin{array}{cl}\frac{1}{\frac{1}{a}+1}&\text{ falls }\frac{1}{a}\in\mathbb{N}\\\frac{1}{\frac{1}{a}-1}&\text{ falls }-\frac{1}{a}\in\mathbb{N}\\a&\text{ sonst.}\end{array}\right.\\
+B\rightarrow A:=a(b)&=\left\{\begin{array}{cl}\frac{1}{\frac{1}{b}-1}&\text{ falls }\frac{1}{b}\in\mathbb{N}\\\frac{1}{\frac{1}{b}+1}&\text{ falls }-\frac{1}{b}\in\mathbb{N}\\b&\text{ sonst.}\end{array}\right.
 \end{align}
 \end{document}
