@@ -1,0 +1,85 @@
+\documentclass[12pt,a4paper,notitlepage]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[a4paper,textwidth=17cm, top=2cm, bottom=3.5cm]{geometry}
+\usepackage{eurosym}
+%\usepackage{url}
+\usepackage[T1]{fontenc}
+\usepackage{ucs}
+\usepackage{ngerman} 
+\usepackage{setspace}
+%\usepackage{fourier}
+\usepackage{amssymb,amsmath}
+\usepackage{wasysym}
+\usepackage{amsthm}
+%\usepackage{marvosym}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage[pdftex]{graphicx,color}
+\usepackage{todo}
+\definecolor{p-green}{rgb}{0.12,0.57,0.11}
+\newcommand{\bitem}{\item[--]}
+\newcommand{\litem}[2]{\item[#1 --] #2}
+\newcommand{\blitem}[3]{\item[#1 --] \texttt{#2} -- #3}
+\newcommand{\gfo}{\grqq\ }
+\newcommand{\gfu}{\glqq}
+\newcommand{\zquote}[2]{\glqq #1\grqq\ (Z.\ #2)}
+\newcommand{\pquote}[1]{\glqq #1\grqq}
+\newcommand{\nquote}[2]{#1: \glqq #2\grqq}
+\newcommand{\nwquote}[3]{#1 -- \emph{#2}: \glqq #3\grqq}
+\newcommand{\nwyquote}[4]{#1 -- \emph{#2} (#3): \glqq #4\grqq}
+\newcommand{\diff}{\mathrm{d}}
+\renewcommand{\abstractname}{}
+\definecolor{orange}{rgb}{1,0.6,0}
+\definecolor{d-green}{rgb}{0,0.8,0}
+\definecolor{pink}{rgb}{1,0,0.6}
+\newcommand{\annot}[1]{\textcolor{red}{#1}}
+\newcommand{\ecolor}[1]{\textcolor{pink}{#1}}
+\newcommand{\aufgabe}[1]{\section*{\setcounter{section}{#1}Aufgabe #1}}
+\newcommand{\re}{\text{Re}}
+\newcommand{\im}{\text{Im}}
+\onehalfspacing
+\setlength{\parskip}{8pt plus4pt minus4pt}
+\title{}
+\begin{document}
+\aufgabe{1}
+\subsection*{a)}
+\aufgabe{3}
+\subsection*{a)}
+\begin{align}
+\frac{\partial f}{\partial t}&=2t+2x\\
+\frac{\partial f}{\partial x}&=2t-sin(x)
+\end{align}
+\subsection*{b)}
+\begin{align}
+f^{(t)}(x,t)&=\left(t^2+2ct^2+\cos\left(ct\right)\right)^{(t)}\\
+&=(2+4c)t-c\cdot\sin\left(ct\right)\\
+\frac{\diff f}{\diff t}&=\frac{\partial f}{\partial t}+\frac{\partial f}{\partial x}\cdot\frac{\diff x}{\diff t}\\
+&=\left(2t+2ct\right)+\left(2t-\sin(ct)\right)\cdot c\\
+&=\left(2+4c\right)t-c\cdot\sin(ct)
+\end{align}
+\aufgabe{4} %FIXME re-check.
+\begin{align}
+F(t)&=m_w(t)\cdot g\\
+&=\frac{x}{\ell}mg\\
+\ddot x&=\frac{F(t)}{m}\\
+&=\frac{g}{\ell}x\\
+x&=ae^{bt}\\
+\left(ae^{bt}\right)''&=\left(abe^{bt}\right)'=ab^2e^{bt}\\
+ab^2e^{bt}&=\frac{g}{\ell}ae^{bt}\\
+\Leftrightarrow b^2&=\frac{g}{l}\\
+\Leftrightarrow x&=ae^{\sqrt{\frac{g}{\ell}}t}\\
+x(0)&=a=x_0\\
+\Rightarrow x&=x_0e^{\sqrt{\frac{g}{\ell}}t}\\
+E_{kin}&=\frac{1}{2}mv^2\\
+&=\frac{1}{2}m\dot x^2\\
+&=\frac{1}{2}mx_0^2\frac{g}{\ell}e^{2\sqrt{\frac{g}{\ell}}t}\\
+&=\frac{mg}{2\ell}x_0^2e^{2\sqrt{\frac{g}{\ell}}t}\\
+E_{pot}&=mgh-mg\frac{x}{\ell}h+mg\frac{x}{\ell}\left(h-\frac{x}{2}\right)\\
+&=mg\cdot\left(h-\frac{x}{\ell}h+\frac{x}{\ell}h-\frac{x}{2}\frac{x}{\ell}\right)\\
+&=mg\cdot\left(h-\frac{x^2}{2\ell}\right)\\
+&=mgh-\frac{mg}{2\ell}x_0^2e^{2\sqrt{\frac{g}{\ell}}t}\\
+E&=E_{kin}+E_{pot}\\
+&=mgh
+\end{align}
+\end{document}
