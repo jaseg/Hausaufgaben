@@ -44,11 +44,53 @@
 \begin{document}
 \aufgabe{1}
 \subsection*{a)}
+\begin{align}
+F_{Feder}(x)&=-ka\\
+a&=\left(\sqrt{L^2+x^2}-\ell_0\right)\\
+U(a)&=\frac{k}{2}a^2\\
+\Leftrightarrow U(x)&=\frac{k}{2}\left(\sqrt{L^2+x^2}-\ell_0\right)^2\\
+\end{align}
+\subsubsection{Der Vollständigkeit halber: Erster Fehlschlag.}
+\begin{align}
+F_{Feder}&=-ka=-k\left(b-\ell_0\right)\\
+b&=\sqrt{L^2+x^2}\\
+F_{Feder}&=-k\left(\sqrt{L^2+x^2}-\ell_0\right)\\
+\text{Kraft entlang }\vec x\text{: }F_x&=F_{Feder}\cdot\frac{x}{\sqrt{L^2+x^2}}\\
+&=-kx\left(1-\frac{\ell_0}{\sqrt{L^2+x^2}}\right)\\
+V(x)&=-\int F(x)\diff x\;\Big|\text{Annahme: }c=0\\
+&=kx\left(\ell_0\text{asinh}\left(\frac{x}{\left|L\right|}\right)-x\right)
+\end{align}
+\subsection*{b)}
+Siehe unten.
+\begin{figure}[h!t]\begin{center}\include{l0ltl}\end{center}\end{figure}
+\begin{figure}[h!t]\begin{center}\include{l0gtl}\end{center}\end{figure}
+\subsection*{c)}
+Die Extrema befinden sich an Stellen, an denen $F(x)=0$ gilt. Dies gilt bei $F_{Feder}=0$ und bei $x=0$, wo $F_{Feder}$ senkrecht auf $\vec x$ steht.
+\begin{align}
+F(x)&=0\\
+F_{Feder}&=-k\left(\sqrt{L^2+x^2}-\ell_0\right)\\
+\Leftrightarrow L^2+x^2&=\ell_0^2\\
+\ell_0>L\Rightarrow x_{1,2}&=\pm\sqrt{\ell_0^2-L^2}
+\end{align}
+Für $\ell_0>L$ gibt es drei Gleichgewichtslagen: Eine bei $x=0$ und zwei bei $x=\pm\sqrt{\ell_0^2-L^2}$. Erstere ist instabil, das sie auf einem Potentialmaximum liegt (siehe Plot). Die anderen beiden sind stabil.
+
+Für $\ell_0\leq L$ gibt es nur eine Gleichgewichtslage bei $x=0$, diese ist stabil.
+\subsection*{d)}
+Siehe obiger Paragraph zu b)
+\subsection*{e)}
+
+\aufgabe{2}
+\begin{align}
+\ddot x&=-\frac{\alpha}{mx^3}\\
+V(x)&=-\int F(x)\diff x\\
+&=\alpha\int\frac{1}{x^3}\diff x\\
+&=-\alpha\frac{1}{2x^2}
+\end{align}
 \aufgabe{3}
 \subsection*{a)}
 \begin{align}
 \frac{\partial f}{\partial t}&=2t+2x\\
-\frac{\partial f}{\partial x}&=2t-sin(x)
+\frac{\partial f}{\partial x}&=2t-\sin(x)
 \end{align}
 \subsection*{b)}
 \begin{align}
