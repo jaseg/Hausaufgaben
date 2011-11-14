@@ -78,7 +78,18 @@ Für $\ell_0\leq L$ gibt es nur eine Gleichgewichtslage bei $x=0$, diese ist sta
 \subsection*{d)}
 Siehe obiger Paragraph zu b)
 \subsection*{e)}
-
+\begin{align}
+F(x)&=F_{Feder}\cdot\frac{x}{\sqrt{L^2+x^2}}\\
+&=-kx\cdot\left(1-\frac{\ell_0}{\sqrt{L^2+x^2}}\right)\\
+&=kx\cdot\left(\frac{\ell_0}{\sqrt{L^2+x^2}}-1\right)\\
+x\ll L\Rightarrow F(x)&=kx\cdot\left(\frac{\ell_0}{\sqrt{L^2}}-1\right)\\
+&=-\left(1-\frac{\ell_0}{\sqrt{L^2}}\right)k\cdot x
+\end{align}
+Aus den Gleichungen eines harmonischen Oszillators in einer Dimension folgt:
+\begin{align}
+\omega_0&=\sqrt{\frac{k'}{m}}\\
+&=\sqrt{\frac{\left(1-\frac{\ell_0}{\sqrt{L^2}}\right)k}{m}}
+\end{align}
 \aufgabe{2}
 \begin{align}
 \ddot x&=-\frac{\alpha}{mx^3}\\
