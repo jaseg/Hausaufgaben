@@ -35,6 +35,8 @@
 \definecolor{d-green}{rgb}{0,0.8,0}
 \definecolor{pink}{rgb}{1,0,0.6}
 \newcommand{\annot}[1]{\textcolor{red}{#1}}
+\newcommand{\grad}{\text{grad}}
+\newcommand{\rot}{\text{rot}}
 \newcommand{\ecolor}[1]{\textcolor{pink}{#1}}
 \newcommand{\aufgabe}[1]{\section*{\setcounter{section}{#1}Aufgabe #1}}
 \newcommand{\re}{\text{Re}}
@@ -43,14 +45,50 @@
 \setlength{\parskip}{8pt plus4pt minus4pt}
 \begin{document}
 \begin{center}
-\Large Hausaufgaben für MODULE
+\Large Hausaufgaben für P1a
 
 \normalsize Online unter \url{http://github.com/jaseg/Hausaufgaben}
 \end{center}
 \begin{tabularx}{\textwidth}{Xr}
-Jan Sebastian Götte (546408), Paul Scheunemann&Abgabe: DUEDATE
+Jan Sebastian Götte (546408), Paul Scheunemann&Abgabe: 111121
 \end{tabularx}
 \aufgabe{1}
 \aufgabe{2}
 \aufgabe{3}
+\begin{align}
+\grad\left(\frac{a}{r}\right)&=-\frac{a}{r^2}\\
+\rot(\vec\omega\times\vec r)&=\nabla\times(\vec\omega\times\vec r)\\
+&=\nabla\times\left(\begin{matrix}
+\omega_2r_3-\omega_3r_2\\
+\omega_3r_1-\omega_1r_3\\
+\omega_1r_2-\omega_2r_1
+\end{matrix}\right)\\
+&=\left(\begin{matrix}
+-\omega_1-\omega_1\\
+-\omega_2-\omega_2\\
+-\omega_3-\omega_3
+\end{matrix}\right)\\
+&=-2\vec\omega\\
+\rot\left(\begin{matrix}
+e^{-x^2-y^2}\\
+e^{-x^2-y^2}\\
+z
+\end{matrix}\right)&=\left(\begin{matrix}
+0\\
+0\\
+-2ye^{-x^2-y^2}+2xe^{-x^2-y^2}
+\end{matrix}\right)\\
+&=\left(\begin{matrix}
+0\\
+0\\
+(2x-2y)e^{-x^2-y^2}
+\end{matrix}\right)\\
+\rot\left(\begin{matrix}
+xe^{\sin(r)}\\
+ye^{\sin(r)}\\
+ze^{\sin(r)}
+\end{matrix}\right)&;\;r=\sqrt{x^2+y^2+z^2}\\
+&=\vec 0\;\text{, da gilt: }\\
+\left(ze^{\sin(r)}\right)^{(y)}&=yz\frac{e^{\sin(r)}\cos(r)}{r}
+\end{align}
 \end{document}
