@@ -52,5 +52,71 @@ Jan Sebastian Götte (546408), Paul Scheunemann&Abgabe: 111128
 \end{tabularx}
 \aufgabe{1}
 \aufgabe{2}
+\subsection*{a)}
+\begin{align}
+L&=mr_0v_0\\
+E&=T+V\\
+T&=\frac{1}{2}mv_0^2
+\end{align}
+Zur Berechnung der potentiellen Energie $V$ muss zunächst die Lage des Equilibriums zwischen Zentrifugalkraft und Schwerkraft bestimmt werden. Doch zunächst ist festzustellen:
+\begin{equation}
+\dot{\vec L}=\vec 0
+\end{equation}
+Dies gilt, da die einzige wirkende Kraft radial ist, und der Schwerkraft entspricht, die einem konservativen Kraftfeld entspringt. Nun:
+\begin{align}
+\left|\vec L\right|&=mrv=mr_0v_0\\
+\Rightarrow v(r)&=v_0\frac{r_0}{r}\\
+F_Z&=-F_R\quad\text{per Voraussetzung}\\
+=-m\frac{v(r_t)^2}{r_t}&=-Mg\\
+=-m\frac{r_0^2v_0^2}{r_t^3}\\
+\Rightarrow r_t&=\sqrt[3]{\frac{mr_0^2v_0^2}{Mg}}\\
+\Rightarrow V&=\int_{r_t}^{r_0}F_z\diff r\Big|\dot F_Z=0\\
+&=F_Zr\Big|_{r_t}^{r_0}\\
+&=Mgr_0-Mg\sqrt[3]{\frac{mr_0^2v_0^2}{Mg}}
+\end{align}
+Durch Einsetzen erhält man
+\begin{equation}
+E=\frac{1}{2}mv_0^2+Mgr_0-Mg\sqrt[3]{\frac{mr_0^2v_0^2}{Mg}}
+\end{equation}
+\subsection*{b)}
+\subsection*{c)}
+\begin{align}
+F_Z&=-F_R=-m\omega^2r\quad\Big|\omega=\frac{v}{r}\\
+=-\frac{mv_0^2}{r_0}&=-Mg\\
+\Rightarrow\frac{v_0^2}{r_0}&=\frac{M}{m}g
+\end{align}
 \aufgabe{3}
+\begin{align}
+\vec F_G&=-\gamma\frac{m_1m_2}{r^2}\frac{\vec r}{r}\\
+\Rightarrow F_G&=-\gamma\frac{m_1m_2}{r^2}\\
+F_g&=m\cdot g\\
+g&=-\gamma\frac{m_E}{r_E^2}\\
+\left|1-\gamma\frac{m_E}{r_E^2}\cdot m\cdot\frac{1}{\gamma\frac{m_E}{R^2}\cdot m}\right|&<10^{-3}=0.001\\
+\Rightarrow\left|1-\left[\frac{\frac{1}{r_E^2}}{\frac{1}{R^2}}=\frac{R^2}{r_E^2}\right]\right|&<10^{-3}\\
+\stackrel{R>r_E}{\Rightarrow}\frac{R^2}{r_E^2}-1&<10^{-3}\\
+\Rightarrow R^2&<r_E\cdot\left(1+10^{-3}\right)\\
+\Rightarrow R_{\text{max}}&=\sqrt{r_E^2\cdot\left(1+10^{-3}\right)}\\
+&=6373km\\
+\Rightarrow\Delta R_{\text{max}}&=3km
+\end{align}
+\aufgabe{5}
+\subsection*{a)}
+\begin{description}
+\item[Energie] bleibt erhalten, da keine Kräfte wirken.
+\item[Impuls] bleibt erhalten, da keine Kräfte wirken.
+\item[Drehimpuls bezüglich A] bleibt erhalten, da keine Kräfte wirken. $\vec L_A$ ist obendrein $\vec 0$, sofern $A$ auf der gestrichelten Linie liegt.
+\item[Drehimpuls bezüglich B] bleibt erhalten, da keine Kräfte wirken.
+\end{description}
+\subsection*{b)}
+\begin{description}
+\item[Energie] bleibt erhalten, da $\vec F$ konservativ ist:
+\begin{align}
+\vec F(\vec r)&=f\left(\left|\vec r\right|\right)\cdot\vec e_r\\
+\vec\nabla\times\vec F\left(\vec r\right)&=\vec 0
+\end{align}
+Letzteres folgt daraus, dass $f$ bloß von $\left|\vec r\right|$ abhängt.
+\item[Impuls] bleibt nicht erhalten, da Kräfte wirken ($\vec F=\dot\vec p\neq\vec 0$).
+\item[Drehimpuls bezüglich A] bleibt nicht erhalten, da $\frac{\diff\vec L}{\diff t}=\vec M=\vec x\times\vec F$ nicht verschwindet ($\vec F$ ist unabhängig von $\vec x$).
+\item[Drehimpuls bezüglich B] bleibt erhalten, da $\frac{\diff\vec L}{\diff t}=\vec M=\vec x\times\vec F=\vec 0$, da $\vec x$ und $\vec F$ per Definition kollinear sind.
+\end{description}
 \end{document}

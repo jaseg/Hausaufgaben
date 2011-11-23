@@ -2,7 +2,7 @@
 all: pdf
 
 
-pdf: gnuplot lösung.tex
+pdf: lösung.tex
 	pdflatex lösung.tex
 
 

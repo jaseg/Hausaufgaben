@@ -53,6 +53,32 @@
 Jan Sebastian Götte (546408), Paul Scheunemann&Abgabe: 111121
 \end{tabularx}
 \aufgabe{1}
+\begin{align}
+\dot v&=-m\gamma v+\frac{g_x}{m}\;;g_x=g\sin(x)\\
+\text{Ansatz aus Wikipedia (en)}
+\Rightarrow A(t)&=-m\gamma\\
+b(t)&=\frac{g_x}{m}\\
+F(t)&=\int_{t_0}^t-m\gamma\diff t\;;t_0=0\\
+&=-m\gamma t\\
+v(t)&=C(t)e^{-m\gamma t}\\
+\dot v&=\dot Ce^{-m\gamma t}+\left(-m\gamma Ce^{-m\gamma t}\right)\\
+&=-m\gamma v+\frac{g_x}{m}\\
+\Rightarrow\frac{g_x}{m}=\dot Ce^{-m\gamma t}&\Leftrightarrow\frac{g_x}{m}e^{m\gamma t}=\dot C\\
+C&=\int_{t_0}^te^{m\gamma t}\diff t\frac{g_x}{m}\\
+\Rightarrow C&=\frac{g_x}{m}\cdot\frac{1}{m\gamma}e^{m\gamma t}+c\\
+&=\frac{g_x}{\gamma m^2}e^{m\gamma t}+c\\
+\Rightarrow v(t)&=\frac{g_x}{\gamma m^2}e^0+ce^{-m\gamma t}\\
+\dot v&=-m\gamma ce^{-m\gamma t}\\
+-m\gamma ce^{-m\gamma t}&=\frac{g_x}{m}-m\gamma ce^{-m\gamma t}+\frac{g_x}{m}\\
+v(0)=0&=\frac{g_x}{\gamma m^2}e^0+ce^{-m\gamma t}\\
+\Rightarrow c=-\frac{g_x}{\gamma m^2}\\
+x(t)&=\int_{t_0}^tv(t)\diff t\\
+&=\int \frac{g_x}{\gamma m^2}+\frac{g_x}{\gamma m^2}e^{-m\gamma t}\diff t\\
+&=t\frac{g_x}{\gamma m^2}-\frac{g_x}{m}e^{-m\gamma t}+c_2\\
+x(0)=0&=-\frac{g_x}{m}+c_2\\
+\Rightarrow c_2&=\frac{g_x}{m}\\
+x(t)&=t\frac{g_x}{\gamma m^2}-\frac{g_x}{m}e^{-m\gamma t}+\frac{g_x}{m}
+\end{align}
 \aufgabe{2}
 \aufgabe{3}
 \begin{align}
