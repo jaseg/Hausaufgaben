@@ -160,6 +160,39 @@ g&=-\gamma\frac{m_E}{r_E^2}\\
 &=6373km\\
 \Rightarrow\Delta R_{\text{max}}&=3km
 \end{align}
+\aufgabe{4}
+\subsection*{a)}
+\begin{description}
+\item[Energie] bleibt erhalten, da das aus den vier Kraftzentren resultierende Feld ein konservatives Kraftfeld ist, da es ein Potential besitzt.
+\item[Drehimpuls] bleibt erhalten, da das resultierende Feld (wie du gleich noch sehen wirst) ein Zentralfeld ist.
+\end{description}
+\subsection*{b)}
+\begin{align}
+V(\vec x)&=\frac{1}{4}\left((\vec x-\vec R_1)^2+(\vec x-\vec R_2)^2+(\vec x-\vec R_3)^2+(\vec x-\vec R_4)^2\right)\\
+&=\frac{1}{4}\left(x_1^2-x_1+x_2^2+x_1^2-x_2+x_2^2+x_1^2+x_1+x_2^2+x_1^2+x_2+x_2^2\right)\\
+&=x_1^2+x_2^2=\vec x^2\\
+\vec F&=-\nabla V=-\left(\begin{matrix}2x_1\\2x_2\end{matrix}\right)=-2\vec x\\
+\vec a=\ddot{\vec x}&=\frac{\vec F}{(m=1)}=\vec F=-2\vec x\\
+\Rightarrow\vec x&=-\frac{1}{2}\ddot{\vec x}\\
+\text{Ansatz: }\vec x&=\left(\begin{matrix}
+k_1\sin\sqrt2t+k_2\cos\sqrt2t\\
+k_3\sin\sqrt2t+k_4\cos\sqrt2t
+\end{matrix}\right)\\
+\dot{\vec x}&=\sqrt2\left(\begin{matrix}
+k_1\cos\sqrt2t-k_2\sin\sqrt2t\\
+k_3\cos\sqrt2t-k_4\sin\sqrt2t
+\end{matrix}\right)
+\end{align}
+Aus den Anfangsbedingungen folgt nun $k_1=0; k_2=1; k_3=2; k_4=0$ und somit gilt:
+\begin{equation}
+\vec x=\left(\begin{matrix}
+\cos\sqrt2t\\
+2\sin\sqrt2t
+\end{matrix}\right)
+\end{equation}
+\subsection*{c)}
+Die Bahnkurve besitzt die Form einer Ellipse, wie man an ihrer Formel eindrucksvoll sehen kann. Zur verdeutlichung noch ein Plot:
+\center{\includegraphics[width=\textwidth]{bahnkurve4c.pdf}}
 \aufgabe{5}
 \subsection*{a)}
 \begin{description}
