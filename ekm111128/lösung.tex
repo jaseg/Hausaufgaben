@@ -51,6 +51,55 @@
 Jan Sebastian Götte (546408), Paul Scheunemann&Abgabe: 111128
 \end{tabularx}
 \aufgabe{1}
+\subsection*{a}
+Es kann $v_{0z}=0$ angenommen werden, da die Bahnkurve des Massepunktes in der Ebene liegen muss, die vom Vektor der Anfangsgeschwindigkeit und vom Vektor der Schwerkraft aufgespannt wird. Durch Rotation und Translation des Koordinatensystems lässt sich somit jede derartige Bewegung auf eine Form bringen, in der $v_{0z}=0$ gilt.
+\begin{align}
+\vec F_g&=-g\vec e_y\\
+\vec F_R&=-m\gamma\dot{\vec x}=-m\gamma\vec v\quad\Big|\vec v=\dot{\vec x}\\
+\vec a&=\frac{\vec F}{m}=\dot{\vec v}\\
+&=\frac{1}{m}\cdot\left(-g\vec e_y-m\gamma\vec v\right)\\
+&=-\frac{g}{m}\vec e_y-\gamma\vec v=\dot{\vec v}\\
+\frac{g}{m}\vec e_y+\gamma\vec v+\dot{\vec v}&=0\label{inhomo1}
+\end{align}
+\ref{inhomo1} ist eine inhomogene lineare Differentialgleichung erster Ordnung. Die Lösung erfolgt im Folgenden über das charakteristische Polynom der zugehörigen homogenen DG mittels Variation der Konstanten.
+\begin{align}
+\gamma\vec v+\dot{\vec v}=0\:&\Rightarrow\:\left\{\begin{matrix}
+\gamma v_x+\dot v_x=0\\
+\gamma v_y+\dot v_y=0\\
+\gamma v_z+\dot v_z=0\\
+\end{matrix}\right.\\
+P_\text{Ch}:re^{rx}+\gamma e^{rx}&=0\\
+\Rightarrow v_i&=c_ie^{-\gamma t}\\
+\Rightarrow \vec v&=e^{-\gamma t}\vec c\\
+\vec v(t)=e^{-\gamma t}\vec c(t);&\quad\dot{\vec v}=-\gamma e^{-\gamma t}\vec c(t)+\dot{\vec c}(t)e^{-\gamma t}\\
+\frac{g}{m}\vec e_y&=-\dot{\vec v}-\gamma\vec v=\underline{\gamma e^{-\gamma t}\vec c(t)}-\dot{\vec c}(t)e^{-\gamma t}\underline{-\gamma e^{-\gamma t}\vec c(t)}\\
+\Rightarrow\frac{g}{m}\vec e_y&=-\dot\vec c(t)e^{-\gamma t}\\
+\Rightarrow\dot{\vec c}(t)&=-\frac{g}{m}\vec e_ye^{\gamma t}\\
+\vec c(t)&=\int-\frac{g}{m}\vec e_ye^{\gamma t}\diff t\\
+&=-\frac{g}{\gamma m}\vec e_ye^{\gamma t}+\vec q\\
+\vec v&=e^{-\gamma t}\vec c(t)\\
+&=\left(\begin{matrix}
+q_1e^{-\gamma t}\\
+-\frac{g}{\gamma m}+q_2e^{-\gamma t}\\
+q_3e^{-\gamma t}
+\end{matrix}\right)\\
+\dot{\vec v}&=\left(\begin{matrix}
+-\gamma q_1e^{-\gamma t}\\
+-\gamma q_2e^{-\gamma t}\\
+-\gamma q_3e^{-\gamma t}
+\end{matrix}\right)=-\gamma e^{-\gamma t}\vec q\\
+\vec x&=\sum\vec e_i\int\dot x_i\diff t\\
+&=\vec x_0-\frac{1}{\gamma}\left(\begin{matrix}
+q_1e^{-\gamma t}\\
+\frac{g}{m}t+q_2e^{-\gamma t}\\
+q_3e^{-\gamma t}
+\end{matrix}\right)\\
+\left(\begin{matrix}
+q_1\\q_2\\q_3
+\end{matrix}\right)&=\vec v_0
+\end{align}
+\subsection*{b}
+...da sie länger fliegen und somit zur Abschätzung der Flugkurve mehr Zeit verbleibt.
 \aufgabe{2}
 \subsection*{a)}
 \begin{align}
@@ -83,6 +132,14 @@ Die Einheitenbetrachtung zeigt keine Fehler auf, Platzhalber sei hier bloß die 
 \left[E\right]=J=\left[\sqrt[3]{M^2g^2mr_0^2v_0^2}\right]=\sqrt[3]{kg^2\cdot\frac{m^2}{s^4}\cdot kg\cdot m^2\cdot\frac{m^2}{s^2}}=\frac{kg\cdot m^2}{s^2}
 \end{equation}
 \subsection*{b)}
+\begin{align}
+F&=F_R-F_G=m'\cdot a\\
+\Rightarrow a&=\frac{F_R-F_G}{m+M}\\
+&=\frac{mv_t^2}{r(M+m)}-\frac{Mg}{M+m}\\
+=\frac{mr_0^2v_0^2}{r^2(M+m)}-\frac{Mg}{M+m}&=\ddot r\\
+\Leftrightarrow\frac{mr_0^2v_0^2}{M+m}r^{-2}-\ddot r&=\frac{Mg}{M+m}
+\end{align}
+%FIXME incomplete.
 \subsection*{c)}
 \begin{align}
 F_Z&=-F_R=-m\omega^2r\quad\Big|\omega=\frac{v}{r}\\
