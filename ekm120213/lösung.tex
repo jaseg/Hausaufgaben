@@ -1,15 +1,17 @@
 \documentclass[12pt,a4paper,notitlepage]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper,textwidth=17cm, top=2cm, bottom=3.5cm]{geometry}
-\usepackage{eurosym}
 %\usepackage{url}
 \usepackage[T1]{fontenc}
-\usepackage{utf8x}
+\usepackage{ucs}
 \usepackage{ngerman} 
 \usepackage{setspace}
 %\usepackage{fourier}
 \usepackage{amssymb,amsmath}
+\usepackage{eurosym}
 \usepackage{wasysym}
+\usepackage{spverbatim}
+%\usepackage{gensymb}
 \usepackage{amsthm}
 %\usepackage{marvosym}
 \usepackage{tabularx}
@@ -18,7 +20,7 @@
 \usepackage[thinspace,thinqspace,squaren,textstyle]{SIunits}
 \usepackage{tabularx}
 \usepackage[pdftex]{graphicx,color}
-\usepackage{todo}
+%\usepackage{todo}
 \definecolor{p-green}{rgb}{0.12,0.57,0.11}
 \newcommand{\bitem}{\item[--]}
 \newcommand{\litem}[2]{\item[#1 --] #2}
@@ -54,15 +56,48 @@ Jan Sebastian Götte (546408)
 \aufgabe{1}
 \begin{align}
 \rho_L &= \frac{1}{V_m}\cdot\sum M_i\cdot r_i\\
-V_m \propto T &\Rightarrow V_m(T=20\degrees) = V_m(T=0\degrees)*\frac{293.15\kelvin}{273.15\kelvin}\\
-\Rightarrow \rho_L &= \frac{1}{V_m(T=0\degrees)*\frac{293.15\kelvin}{273.15\kelvin}}\cdot\sum M_i\cdot r_i
+V_m \propto T &\Rightarrow V_m(T=20\degree) = V_m(T=0\degree)\cdot\frac{293.15\kelvin}{273.15\kelvin}\\
+\Rightarrow \rho_L &= \frac{1}{V_m(T=0\degree)\cdot\frac{293.15\kelvin}{273.15\kelvin}}\cdot\sum M_i\cdot r_i\\
+&= 1.204041\frac{\kilogram}{\meter^3}
 \end{align}
-\begin{verbatim}
-(%i2) 1/22.413968*1000*293.15/273.15*(0.7808*28.01+0.2095*32+0.0093*39.95+0.0004*44.01)/1000;
-(%o2)                          1.386815520922169
-\end{verbatim}
 \aufgabe{2}
+\subsection*{a)}
+\begin{align}
+\rho(T_2)&=\rho(T_1)\cdot\frac{T_1}{T_2}\\
+F_A=g\rho V&\;F_g=g\rho V=mg\\
+300\kilogram\cdot g&=g\rho_LV-g\rho_HV\\
+\Rightarrow 300\kilogram&=(\rho_L-\rho_H)\cdot V\\
+&=1.2\kilogram/\meter^3\cdot\left(1-\frac{T_1}{T_2}\right)\cdot V\\
+V=\frac{\pi}{6}d^3\\
+\Rightarrow d&=\sqrt[3]{\frac{6\cdot 300}{\pi\cdot 1.2\cdot\left(1-\frac{393.15}{413.15}\right)}}\\
+&=21.5\meter
+\end{align}
+\subsection*{b)}
+Die Dichte von Wasserdampf liegt bei ca. $0.6\frac{\kilogram}{\meter^3}$, was geringer als die Dichte 40° warmer Luft ist. Der Ballon wird also leichter und steigt somit.
 \aufgabe{3}
+\begin{align}
+pV&=nRT\\
+n&=\frac{pV}{RT}\\
+p&=\frac{nRT}{V}\\
+n_\text{ges}&=\sum_i\frac{p_iV_i}{RT_i}\\
+p_\text{ges}&=\frac{n_\text{ges}RT_\text{ges}}{V}\\
+U_\text{ges}&=U_1+U_2=\frac{5}{2}R\left(n_1T_1+n_2T_2\right)\\
+&=n_\text{ges}T_\text{ges}\cdot\frac{5}{2}R\\
+\Rightarrow T_\text{ges}&=\frac{n_1T_1+n_2T_2}{n_\text{ges}}\\
+&=\frac{\frac{T_1p_1V_1}{RT_1}+\frac{T_2p_2V_2}{RT_2}}{\frac{p_1V_1}{RT_1}+\frac{p_2V_2}{RT_2}}\\
+&=\frac{p_1V_1+p_2V_2}{\frac{p_1V_1}{T_1}+\frac{p_2V_2}{T_2}}\\
+&=\frac{\frac{1}{3}p_1+\frac{2}{3}p_2}{\frac{p_1}{3T_1}+\frac{2p_2}{3T_2}}\\
+&=336K\\
+\Rightarrow p_\text{ges}&=\frac{R\left(n_1T_1+n_2T_2\right)}{V}\\
+&=\frac{R}{V}\left(\frac{p_1V_1T_1}{RT_1}+\frac{p_2V_2T_2}{RT_2}\right)\\
+&=\frac{p_1V_1+p_2V_2}{V}\\
+&=\frac{p_1\cdot\frac{1}{3}V+p_2\cdot\frac{2}{3}V}{V}\\
+&=\frac{1}{3}p_1+\frac{2}{3}p_2\\
+&=1.2\cdot 10^6\pascal
+\end{align}
 \aufgabe{4}
 \aufgabe{5}
+\subsection*{a)}
+\subsection*{b)}
+\subsection*{c)}
 \end{document}
