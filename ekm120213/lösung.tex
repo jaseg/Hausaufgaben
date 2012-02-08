@@ -1,0 +1,68 @@
+\documentclass[12pt,a4paper,notitlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,textwidth=17cm, top=2cm, bottom=3.5cm]{geometry}
+\usepackage{eurosym}
+%\usepackage{url}
+\usepackage[T1]{fontenc}
+\usepackage{utf8x}
+\usepackage{ngerman} 
+\usepackage{setspace}
+%\usepackage{fourier}
+\usepackage{amssymb,amsmath}
+\usepackage{wasysym}
+\usepackage{amsthm}
+%\usepackage{marvosym}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage[thinspace,thinqspace,squaren,textstyle]{SIunits}
+\usepackage{tabularx}
+\usepackage[pdftex]{graphicx,color}
+\usepackage{todo}
+\definecolor{p-green}{rgb}{0.12,0.57,0.11}
+\newcommand{\bitem}{\item[--]}
+\newcommand{\litem}[2]{\item[#1 --] #2}
+\newcommand{\blitem}[3]{\item[#1 --] \texttt{#2} -- #3}
+\newcommand{\gfo}{\grqq\ }
+\newcommand{\gfu}{\glqq}
+\newcommand{\zquote}[2]{\glqq #1\grqq\ (Z.\ #2)}
+\newcommand{\pquote}[1]{\glqq #1\grqq}
+\newcommand{\nquote}[2]{#1: \glqq #2\grqq}
+\newcommand{\nwquote}[3]{#1 -- \emph{#2}: \glqq #3\grqq}
+\newcommand{\nwyquote}[4]{#1 -- \emph{#2} (#3): \glqq #4\grqq}
+\newcommand{\diff}{\mathrm{d}}
+\renewcommand{\abstractname}{}
+\definecolor{orange}{rgb}{1,0.6,0}
+\definecolor{d-green}{rgb}{0,0.8,0}
+\definecolor{pink}{rgb}{1,0,0.6}
+\newcommand{\annot}[1]{\textcolor{red}{#1}}
+\newcommand{\ecolor}[1]{\textcolor{pink}{#1}}
+\newcommand{\aufgabe}[1]{\section*{\setcounter{section}{#1}Aufgabe #1}}
+\newcommand{\re}{\text{Re}}
+\newcommand{\im}{\text{Im}}
+\onehalfspacing
+\setlength{\parskip}{8pt plus4pt minus4pt}
+\begin{document}
+\begin{center}
+\Large Hausaufgaben für P1a
+
+\normalsize Online unter \url{http://github.com/jaseg/Hausaufgaben}
+\end{center}
+\begin{tabularx}{\textwidth}{Xr}
+Jan Sebastian Götte (546408)
+\end{tabularx}
+\aufgabe{1}
+\begin{align}
+\rho_L &= \frac{1}{V_m}\cdot\sum M_i\cdot r_i\\
+V_m \propto T &\Rightarrow V_m(T=20\degrees) = V_m(T=0\degrees)*\frac{293.15\kelvin}{273.15\kelvin}\\
+\Rightarrow \rho_L &= \frac{1}{V_m(T=0\degrees)*\frac{293.15\kelvin}{273.15\kelvin}}\cdot\sum M_i\cdot r_i
+\end{align}
+\begin{verbatim}
+(%i2) 1/22.413968*1000*293.15/273.15*(0.7808*28.01+0.2095*32+0.0093*39.95+0.0004*44.01)/1000;
+(%o2)                          1.386815520922169
+\end{verbatim}
+\aufgabe{2}
+\aufgabe{3}
+\aufgabe{4}
+\aufgabe{5}
+\end{document}
