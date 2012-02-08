@@ -107,6 +107,21 @@ k&:=\frac{M}{2RT}\\
 \Rightarrow v&=\sqrt{\frac{1}{k}}\;\text{da}\;v>0\\
 \Rightarrow v&=\sqrt{\frac{2RT}{M}}
 \end{align}
+\emph{Ist vielleicht die eindimensionale Maxwell-Boltzmann-Verteilung gemeint?}
+\begin{align}
+F(v)&=\sqrt{\frac{m_M}{2\pi k_BT}}\exp\left(-\frac{m_Mv^2}{2k_BT}\right)\label{mb1dim}\\
+\mathrm{Var}(F)&=\frac{m_M}{2\pi k_BT}\mathrm{Var}\left(\exp\left(-\frac{m_Mv^2}{2k_BT}\right)\right)
+\end{align}
+Für eine Normalverteilung gilt:
+\begin{align}
+f(x)&=\frac{1}{\sqrt{2}\sigma}\exp\left(-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right)
+\end{align}
+Demzufolge ist die Varianz der in Gl.\ \ref{mb1dim} beschriebenen gleich der einer Normalverteilung, deren Exponent gleich dem Exponent der Maxwell-Boltzmann-Verteilung ist. Sie kann nun durch Gleichsetzen der Exponenten bestimmt werden ($\mu$ ist offenbar 0):
+\begin{align}
+-\frac{1}{2\sigma^2}\cdot v^2&=-\frac{m_M}{2k_BT}\cdot v^2\\
+\Rightarrow \frac{1}{\sigma^2}&=\frac{m_M}{k_BT}\\
+\Rightarrow \sigma&=\sqrt{\frac{k_BT}{m_M}}
+\end{align}
 \subsection*{b)}
 \begin{align}
 \end{align}
