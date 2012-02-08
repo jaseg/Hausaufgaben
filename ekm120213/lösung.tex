@@ -107,6 +107,14 @@ U_\text{ges}&=U_1+U_2=\frac{5}{2}R\left(n_1T_1+n_2T_2\right)\\
 \end{equation}
 \subsection*{c)}
 \begin{align}
-\sigma_X&=\sqrt{\mathrm{Var}(X)}=\sqrt{\int_{-\infty}^{\infty} (x-\left<x\right>)^2\rho_X(x)\diff x}
+\sigma_X&=\sqrt{\mathrm{Var}(X)}\\
+\mathrm{Var}(X)&=\left<X^2\right>-\left<X\right>^2\\
+&=\frac{1}{b-a}\int_a^bx^2\diff x-\frac{\left(a+b\right)^2}{4}\\
+&=\frac{1}{b-a}\frac{b^3-a^3}{3}-\frac{\left(a+b\right)^2}{4}\\
+&=\frac{1}{3}\left(a^2+ab+b^2\right)-\frac{\left(a+b\right)^2}{4}\\
+&=\frac{1}{12}\left(4a^2+4ab+4b^2-3a^2-6ab-3b^2\right)\\
+&=\frac{1}{12}\left(a^2-2ab+b^2\right)\\
+&=\frac{\left(b-a\right)^2}{12}\\
+\Rightarrow \sigma_X&=\frac{b-a}{2\sqrt{3}}
 \end{align}
 \end{document}
