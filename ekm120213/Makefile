@@ -8,7 +8,7 @@ pdf: lösung.tex
 
 attach: pdf
 	pdftk lösung.pdf attach_files maximalog output output.pdf
-#	mv output.pdf lösung.pdf
+	mv output.pdf lösung.pdf
 
 
 gnuplot: *.gp
