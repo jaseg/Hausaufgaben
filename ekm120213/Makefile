@@ -1,9 +1,14 @@
 
-all: pdf
+all: attach
 
 
-pdf: gnuplot lösung.tex
+pdf: lösung.tex
 	pdflatex lösung.tex
+
+
+attach: pdf
+	pdftk lösung.pdf attach_files maximalog output output.pdf
+#	mv output.pdf lösung.pdf
 
 
 gnuplot: *.gp
