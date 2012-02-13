@@ -75,6 +75,7 @@ V=\frac{\pi}{6}d^3\\
 \subsection*{b)}
 Die Dichte von Wasserdampf liegt bei ca. $0.6\frac{\kilogram}{\meter^3}$, was geringer als die Dichte 40° warmer Luft ist. Der Ballon wird also leichter und steigt somit.
 \aufgabe{3}
+Notiz: Das hier ist alles irgendwie falsch, da Argon und Helium Edelgase (und damit einatomig) sind und nur 3 freiheitsgrade besitzen.
 \begin{align}
 pV&=nRT\\
 n&=\frac{pV}{RT}\\
@@ -89,6 +90,32 @@ U_\text{ges}&=U_1+U_2=\frac{5}{2}R\left(n_1T_1+n_2T_2\right)\\
 &=\frac{\frac{1}{3}p_1+\frac{2}{3}p_2}{\frac{p_1}{3T_1}+\frac{2p_2}{3T_2}}\\
 &=336K\\
 \Rightarrow p_\text{ges}&=\frac{R\left(n_1T_1+n_2T_2\right)}{V}\\
+&=\frac{R}{V}\left(\frac{p_1V_1T_1}{RT_1}+\frac{p_2V_2T_2}{RT_2}\right)\\
+&=\frac{p_1V_1+p_2V_2}{V}\\
+&=\frac{p_1\cdot\frac{1}{3}V+p_2\cdot\frac{2}{3}V}{V}\\
+&=\frac{1}{3}p_1+\frac{2}{3}p_2\\
+&=1.2\cdot 10^6\pascal
+\end{align}
+\subsection*{Neuer Ansatz unter Berücksichtigung der unterschiedlichen Freiheitsgrade:}
+\begin{align}
+pV&=nRT\\
+n&=\frac{pV}{RT}\\
+p&=\frac{nRT}{V}\\
+n_\text{ges}&=\sum_i\frac{p_iV_i}{RT_i}\\
+p_\text{ges}&=\frac{n_\text{ges}RT_\text{ges}}{V}\\
+U_\text{ges}&=U_1+U_2=\frac{R}{2}\left(f_1n_1T_1+f_2n_2T_2\right)\\
+&=n_\text{ges}T_\text{ges}\cdot\frac{f_\text{ges}}{2}R\\
+\Rightarrow T_\text{ges}&=\left(\frac{f_1}{f_\text{ges}}n_1T_1+\frac{f_2}{f_\text{ges}}n_2T_2\right)\cdot\frac{1}{n_\text{ges}}\\
+\text{Vermutung:}\quad f_\text{ges}&=\frac{f_1n_1}{n_\text{ges}}+\frac{f_2n_2}{n_\text{ges}}\\
+\text{Damit ergibt sich: }T_\text{ges}&=\left(\frac{f_1n_\text{ges}}{f_1n_1+f_2n_2}n_1T_1+\frac{f_2n_\text{ges}}{f_1n_1+f_2n_2}n_2T_2\right)\cdot\frac{1}{n_\text{ges}}\\
+&=\frac{n_1T_1}{n_1+\frac{f_2}{f_1}n_2}+\frac{n_2T_2}{\frac{f_1}{f_2}n_1+n_2}\\
+&=\frac{T_1}{1+\frac{f_2n_2}{f_1n_1}}+\frac{T_2}{1+\frac{f_1n_1}{f_2n_2}}\\
+\text{Ergebnis aus Maixma: }T_\text{ges}&=\\
+%begin uncorrected
+\Rightarrow p_\text{ges}&=\frac{R\left(n_1T_1+n_2T_2\right)}{V}
+\end{align}
+Hier hat sich nix geändert... kommt mir auch irgendwie komisch vor.
+\begin{align}
 &=\frac{R}{V}\left(\frac{p_1V_1T_1}{RT_1}+\frac{p_2V_2T_2}{RT_2}\right)\\
 &=\frac{p_1V_1+p_2V_2}{V}\\
 &=\frac{p_1\cdot\frac{1}{3}V+p_2\cdot\frac{2}{3}V}{V}\\
